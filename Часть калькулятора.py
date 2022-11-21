@@ -44,3 +44,20 @@ while True:
             print('Нажмите Enter чтобы продолжить!')
             input()
 if ans == 'S' or ex == 's':
+    Vex = input('Площадь квадрата(С), или площадь параллелепипеда(P)')
+    if Vex == 'C' or Vex == 'c':
+        a = input('Введите высоту:')
+        b = input('Введите ширину:')
+        с = input('Введите глубину:')
+        d = a * b * c
+        print('Результат' +str(d))
+        ex = input('Хотите продолжить?(Да/Нет):')
+        if ex == 'Нет' or ex == 'нет':
+            print('Программа закроется через 5 секунд!!!')
+            import time
+
+            time.sleep(5)
+            break
+        if ex == 'Да' or ex == 'да':
+            print('Нажмите Enter чтобы продолжить!')
+            input()
