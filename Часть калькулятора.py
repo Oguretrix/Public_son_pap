@@ -1,5 +1,5 @@
 ans = input('Для математичских действий(N), площадь(S), обьём(V). Напишите:')
-if ans == 'N':
+if ans == 'N' or ans == 'n':
     Qw = input('Введите 0 для простого калькулятора, @ для процентов:')
     while True:
         if Qw == '0':
@@ -11,11 +11,9 @@ if ans == 'N':
                 import time
                 time.sleep(5)
                 break
-
             if ex == 'Да' or ex == 'да':
                 print('Нажмите Enter чтобы продолжить!')
                 input()
-
         if Qw == '@':
             b = input('Введите число:')
             a = input('Введите число процент которого хотите узнать:')
@@ -25,10 +23,23 @@ if ans == 'N':
             if ex == 'Нет' or ex == 'нет':
                 print('Программа закроется через 5 секунд!!!')
                 import time
-
                 time.sleep(5)
                 break
-
             if ex == 'Да' or ex == 'да':
                 print('Нажмите Enter чтобы продолжить!')
                 input()
+while True:
+    elif ans == 'S' or ex == 's':
+        import math
+        R = float(input('Введите радиус круга:'))
+        S = math.pi * R * R
+        print('Площадь круга:', S)
+        ex = input('Хотите продолжить?(Да/Нет):')
+        if ex == 'Нет' or ex == 'нет':
+            print('Программа закроется через 5 секунд!!!')
+            import time
+            time.sleep(5)
+            break
+        if ex == 'Да' or ex == 'да':
+            print('Нажмите Enter чтобы продолжить!')
+            input()
