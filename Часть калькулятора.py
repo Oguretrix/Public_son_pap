@@ -29,7 +29,7 @@ if ans == 'N' or ans == 'n':
                 print('Нажмите Enter чтобы продолжить!')
                 input()
 while True:
-    elif ans == 'S' or ex == 's':
+    if ans == 'S' or ex == 's':
         import math
         R = float(input('Введите радиус круга:'))
         S = math.pi * R * R
@@ -43,3 +43,4 @@ while True:
         if ex == 'Да' or ex == 'да':
             print('Нажмите Enter чтобы продолжить!')
             input()
+if ans == 'S' or ex == 's':
